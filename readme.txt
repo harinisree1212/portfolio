@@ -1,130 +1,221 @@
-==================================================================================================
+# 💼 Harini Sree's Portfolio
 
-DESCRIPTION:
+Welcome to my personal portfolio website! This project showcases my skills, experiences, and projects in a clean and responsive format using basic web technologies.
 
-CEEVEE is a clean, modern, fully responsive site template designed for online resume and portfolio. 
-With this template, you can easily introduce yourself and showcase your works to future clients 
-and employers. Also, it is flexible and easy to customize so you even use this template as 
-a creative, business or portfolio site for your company.
+🔗 **Live Website**: [https://harinisree1212.github.io/portfolio/](https://harinisree1212.github.io/portfolio/)
 
-==================================================================================================
+---
 
+## 📌 Overview
 
-LICENSE:
+This website is a fully static, multi-page portfolio built using HTML, CSS, and JavaScript. It was designed and deployed with the goal of representing my professional profile and making it easier for recruiters and collaborators to view my work.
 
-This free resource is provided by styleshout.com and is free to use in 
-both personal and commercial projects.
+---
 
+## 🧠 My Git & GitHub Understanding
 
-Rights:
--------
+Here’s what I learned and used while building and deploying this project:
 
-You are permitted to use this free resource in any number of personal and commercial projects for 
-yourself or a client. You may modify the resource according to your requirements and include them 
-in your projects under the following condition - you MUST give appropriate credit, provide an 
-attribution link to styleshout.com.
+### 🔁 Git Concepts
 
+| Command | Purpose |
+|--------|-------------|
+| `git init` | Initialized the local repository |
+| `git status` | Checked file status before commits |
+| `git add .` | Staged all changes |
+| `git commit -m "message"` | Committed changes with messages |
+| `git remote add origin <url>` | Linked local repo to GitHub |
+| `git push -u origin main` | Pushed code to GitHub |
+| `git pull origin main --rebase` | Pulled changes to resolve remote conflicts |
 
-Prohibitions:
--------------
+### 🌐 GitHub Pages Deployment
 
-You are not permitted to resell or redistribute(even for free) the resource "as is" without 
-prior consent. If you would like to republish or promote this resource on your site, please 
-link back to the appropriate resource page on styleshout.com where users can find the download 
-and not directly to the download zip file.
+- Hosted using **GitHub Pages**
+- Enabled GitHub Pages from repository settings and selected `main` branch as the source
 
+---
 
-Attribution: 
-------------
+## 📁 Folder Structure
 
-You must include a credit link to our website(https://www.styleshout.com) somewhere on your site. 
-We prefer the footer credit that comes with the template but you are still free to move it 
-somewhere else.
+```plaintext
+portfolio/
+├── index.html         # Home page
+├── about.html         # About Me section
+├── contact.html       # Contact form
+├── style.css          # Styling for all pages
+├── script.js          # JS for interactivity
+└── assets/            # Images, icons, logos
+```
 
+---
 
+## 🧩 Component & Code Explanation
 
-If you have any questions about the License, feel free to contact us.
+### 🔹 `index.html`
 
+- **Header/Nav Bar**: Navigation to different sections
+- **Hero Section**: Profile image, title, and bio
+- **Skills/Projects**: Displays cards with skill names or sample projects
+- **Footer**: Contact/social info
 
------------------------------------------------------------------------------------------------------
+```html
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+```
 
+---
 
-REMOVING THE ATTRIBUTION LINK:
+### 🔹 `about.html`
 
-We understand that there are situations where you want to use our templates without 
-the crediting obligation. If that's your case, you can always send us a 
-credit removal fee of 10 USD through Paypal. This will allow you to use a single 
-template attribution/credit link free on ONE DOMAIN name.
+- Displays academic qualifications, certifications, and strengths
 
-You can send your payments through Paypal to this address: ealigam@gmail.com or
-visit our attribution removal page: https://www.styleshout.com/attribution-free/ 
-and click the pay button on the page.
+```html
+<section id="education">
+  <h2>Education</h2>
+  <p>B.Tech in Information Technology, [University Name]</p>
+</section>
+```
 
-If possible, kindly send us the site's url where the template is being used. 
-Also, keep your Paypal receipt as proof of payment and your good to go.
+---
 
+### 🔹 `contact.html`
 
------------------------------------------------------------------------------------------------------- 
+- Contains an HTML5 contact form
 
+```html
+<form action="#" method="post">
+  <input type="text" name="name" required placeholder="Your Name">
+  <input type="email" name="email" required placeholder="Your Email">
+  <textarea name="message" required placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+```
 
-SUPPORT:
-    
-Since CEEVEE is distributed for free, support is not offered. CEEVEE is coded according 
-to current web standards and we did our best to make the template easy to use and modify.
-If you have minimum web development experience, you can easily modify the template. 
-However, If you're still new to HTML and CSS, I suggest that you visit the 
-following tutorials:
+---
 
- - https://marksheet.io/
- - http://learn.shayhowe.com/html-css/
+### 🔹 `style.css`
 
-These will teach you the essentials of HTML and CSS. In addition, if you want to include
-javascript in your skill-set, you can also check out these tutorials: 
+- Used for custom styling
 
- - https://www.codecademy.com/learn/introduction-to-javascript
- - https://javascript.info/
+```css
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+nav a:hover {
+  color: #ff6600;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+```
 
+---
 
+### 🔹 `script.js`
 
------------------------------------------------------------------------------------------------------- 
+- Adds simple interactivity (if used)
 
+```javascript
+document.querySelector("form").addEventListener("submit", function (e) {
+  alert("Thank you for contacting me!");
+});
+```
 
-GET THE LATEST VERSION:
+---
 
-We update our templates on a regular basis so to make sure that you have the latest version, 
-always download the template files directly on our website(https://www.styleshout.com/)
+## 🛠️ Technologies Used
 
+- **HTML5** – Markup language for structure
+- **CSS3** – Styling and layout
+- **JavaScript** – Basic functionality
+- **Git & GitHub** – Version control
+- **GitHub Pages** – Free static site hosting
 
+---
 
--------------------------------------------------------------------------------------------------------
+---
 
+## 🧠 My Understanding of Git & GitHub
 
-SOURCES AND CREDITS:
+While building this project, I gained a solid understanding of **Git** and **GitHub** — essential tools for version control and collaboration.
 
-I've used the following resources as listed.
+### ✅ What I've Learned:
 
-Fonts:
- - Inter Font (https://fonts.google.com/specimen/Inter)
- - IBM Plex Serif Font (https://fonts.google.com/specimen/IBM+Plex+Serif)
+- **Version Control Basics**:
+  - Git helps track changes in my project, so I can revert back or compare versions anytime.
+  - I can manage and maintain clean project histories using commits.
 
-Icons:
- - Boxicons (https://boxicons.com/)
- - FontAwesome (https://fontawesome.com/)
+- **Staging & Committing**:
+  - Used `git add` to stage changes and `git commit` to save snapshots of my project with clear messages.
 
-Stock Photos and Graphics:
- - Unsplash.com (https://unsplash.com/)
- 
-Javascript Files:
- - Rellax.js (https://dixonandmoe.com/rellax/)
- - Swiper (https://swiperjs.com/)
- - Jump.js (https://github.com/callmecavs/jump.js)
- - Prism.js (https://prismjs.com/)
- - Basic Lightbox (https://basiclightbox.electerious.com/)
- - MailtoUI (https://mailtoui.com/)
+- **Repository Setup**:
+  - Initialized a local Git repository using `git init`.
+  - Created and connected a remote repository on GitHub using:
+    ```bash
+    git remote add origin <repo-url>
+    git push -u origin main
+    ```
 
--------------------------------------------------------------------------------------------------------
+- **Branching & Merging (basic intro)**:
+  - Learned the concept of branches to work on features independently.
+  - Got introduced to merge conflicts and how to resolve them.
 
+- **Error Handling**:
+  - Faced push errors like:
+    ```
+    ! [rejected] main -> main (fetch first)
+    ```
+    - Learned to fix them using:
+      ```bash
+      git pull origin main --rebase
+      git push origin main
+      ```
 
-Thanks for downloading from Styleshout :)
+- **Deployment**:
+  - Understood how to deploy websites using **GitHub Pages** by selecting the `main` branch and root directory.
 
+### 🛠 Commands I Frequently Used:
 
+```bash
+git init                    # Initialize repo
+git status                 # Check current changes
+git add .                  # Stage all changes
+git commit -m "Message"    # Commit with a message
+git remote add origin URL  # Link to GitHub
+git push -u origin main    # Push changes
+git pull origin main       # Sync changes from remote
+```
+
+This project gave me hands-on experience with Git and taught me the importance of version control in real-world projects.
+
+---
+
+## 🚀 Future Enhancements
+
+- Add animations using AOS.js or CSS transitions
+- Add project cards with GitHub links
+- Connect contact form to Formspree or EmailJS
+- Add dark/light theme toggle
+
+---
+
+## 📬 Contact
+
+If you'd like to connect or collaborate:
+
+- Email: [your email]
+- LinkedIn: [your LinkedIn profile link]
+
+---
+
+> Created with 💖 by Harini Sree | Hosted on GitHub Pages
